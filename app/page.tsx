@@ -6,37 +6,71 @@ export default function Home() {
       <h1 className="mt-5 font-semibold text-center">
         Authentication With Next.js
       </h1>
-      <div className="w-1/2 mt-8 px-5 flex flex-col gap-4">
-        <p>
-          Authentication verifies a user's identity. This happens when a user
-          logs in, either with a username and password or through a service like
-          Google. It's all about confirming that users are really who they claim
-          to be, protecting both the user's data and the application from
-          unauthorized access or fraudulent activities.
-        </p>
-        <h3>Main Authentication Strategies:</h3>
-        <ol className="list-decimal list-inside">
-          <li>
-            <Link className="font-medium" href="/oauth">
+      <p className="text-center px-48 mt-5">
+        Authentication verifies a user's identity. This happens when a user logs
+        in, either with a username and password or through a service like
+        Google. It's all about confirming that users are really who they claim
+        to be, protecting both the user's data and the application from
+        unauthorized access or fraudulent activities.
+      </p>
+      <div className="w-full mt-8 px-5 flex flex-col items-center gap-8">
+        <h2>Main Authentication Strategies:</h2>
+        <div className="flex w-full justify-between px-10 text-lg gap-8">
+          <div className="flex flex-col gap-2 w-1/4 items-center">
+            <Link
+              className="font-medium h-16 text-center hover:text-blue-500 transition-all duration-300"
+              href="/oauth"
+            >
               OAuth/OpenID Connect (OIDC)
             </Link>
-          </li>
-          <li>
-            <Link className="font-medium" href="/credentials">
+            <p className="text-base">
+              Enable third-party access without sharing user credentials. Ideal
+              for social media logins and Single Sign-On (SSO) solutions. They
+              add an identity layer with OpenID Connect.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 w-1/4 items-center">
+            <Link
+              className="font-medium h-16 text-center hover:text-blue-500 transition-all duration-300"
+              href="/credentials"
+            >
               Credentials-based login (Email + Password)
             </Link>
-          </li>
-          <li>
-            <Link className="font-medium" href="/token-based">
+            <p className="text-base">
+              A standard choice for web applications, where users log in with an
+              email and password. Familiar and easy to implement, it requires
+              robust security measures against threats like phishing.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 w-1/4 items-center">
+            <Link
+              className="font-medium h-16 text-center hover:text-blue-500 transition-all duration-300"
+              href="/token-based"
+            >
               Passwordless/Token-based authentication
             </Link>
-          </li>
-          <li>
-            <Link className="font-medium" href="/passkeys">
+            <p className="text-base">
+              Use email magic links or SMS one-time codes for secure,
+              password-free access. Popular for its convenience and enhanced
+              security, this method helps reduce password fatigue. Its
+              limitation is the dependency on the user's email or phone
+              availability.
+            </p>
+          </div>
+          <div className="flex flex-col gap-2 w-1/4 items-center">
+            <Link
+              className="font-medium h-16 text-center hover:text-blue-500 transition-all duration-300"
+              href="/passkeys"
+            >
               Passkeys/WebAuth
             </Link>
-          </li>
-        </ol>
+            <p className="text-base">
+              Use cryptographic credentials unique to each site, offering high
+              security against phishing. Secure but new, this strategy can be
+              difficult to implement.
+            </p>
+          </div>
+        </div>
       </div>
     </main>
   );
