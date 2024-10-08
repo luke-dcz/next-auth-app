@@ -7,11 +7,11 @@ export default function Home() {
         Authentication With Next.js
       </h1>
       <p className="text-center px-48 mt-5">
-        Authentication verifies a user's identity. This happens when a user logs
-        in, either with a username and password or through a service like
-        Google. It's all about confirming that users are really who they claim
-        to be, protecting both the user's data and the application from
-        unauthorized access or fraudulent activities.
+        Authentication verifies a user`&apos;`s identity. This happens when a
+        user logs in, either with a username and password or through a service
+        like Google. It`&apos;`s all about confirming that users are really who
+        they claim to be, protecting both the user`&apos;`s data and the
+        application from unauthorized access or fraudulent activities.
       </p>
       <div className="w-full mt-8 px-5 flex flex-col items-center gap-8">
         <h2>Main Authentication Strategies:</h2>
@@ -53,7 +53,7 @@ export default function Home() {
               Use email magic links or SMS one-time codes for secure,
               password-free access. Popular for its convenience and enhanced
               security, this method helps reduce password fatigue. Its
-              limitation is the dependency on the user's email or phone
+              limitation is the dependency on the user`&apos;`s email or phone
               availability.
             </p>
           </div>
