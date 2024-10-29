@@ -1,5 +1,6 @@
 import { BackButton } from "@/components/back-button";
 import { GithubSignIn } from "@/components/github-signin";
+import { GoogleSignIn } from "@/components/google-signin";
 
 export default function OAuthPage() {
   return (
@@ -25,8 +26,9 @@ export default function OAuthPage() {
         </p>
       </div>
       <h3>Below are various OAuth providers to log in with:</h3>
-      <div className="w-full flex justify-between mt-4 mx-16">
+      <div className="w-full flex justify-between mt-4 px-16">
         <GithubSignIn />
+        <GoogleSignIn />
       </div>
     </main>
   );
